@@ -124,7 +124,7 @@ class Student
       ORDER BY students.id
     SQL
 
-    DB[:conn].execute(sql).map do |row|
+    DB[:conn].execute(sql, x).map do |row|
       self.new_from_db(row)
     end 
   end
