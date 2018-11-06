@@ -116,5 +116,10 @@ class Student
     end.first
   end
 
-  
+  def .all_students_in_grade_X(x)
+    sql = <<-SQL 
+      
+
+    SQL 
+  end 
 end
