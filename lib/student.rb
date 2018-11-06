@@ -66,7 +66,11 @@ class Student
     sql = <<-SQL
       SELECT COUNT(grade)
       FROM students
+<<<<<<< HEAD
       WHERE grade = 10
+=======
+      WHERE grade = 10 
+>>>>>>> f15b760f2d5c170b0e2e497f1cd7b4657df535b7
     SQL
 
     DB[:conn].execute(sql).map do |row|
